@@ -64,7 +64,7 @@ getHomeR = do
     filenames <- getList
     defaultLayout $ do
         setTitle "File Processor"
-        $(widgetFileNoReload def "home")
+        $(whamletFile "templates/home.hamlet")
 
 postHomeR :: Handler Html
 postHomeR = do
